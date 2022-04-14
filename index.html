@@ -17,14 +17,18 @@
   <!-- header start  -->
 
   <header>
-    <div class="container">
       <nav class="navbar">
         <div class="brand-title">
           <img src="img/yougo.png" alt="yougo">
         </div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
         <div class="nav-links">
           <ul>
-            <li><a href="#">home</a></li>
+            <li><a href="#home">home</a></li>
             <li><a href="#">places</a></li>
             <li><a href="#">package</a></li>
             <li><input type="text" placeholder="search">
@@ -32,13 +36,30 @@
             </li>
           </ul>
         </div>
-        <div class="book-button">
-          <button class="btn">book now</button>
+        <div class="button-container">
+          <button class="btn book-button">book now</button>
         </div>
       </nav>
-    </div>
   </header>
 
   <!-- header end  -->
+  
+  <!-- main section start -->
+
+  <main class="banner" id="home">
+    <div class="container">
+      <div class="banner-content">
+        <h1 class="banner-title">Going to Your Dream Destinations</h1>
+        <input type="text" placeholder="search destination">
+        <button class="banner-button">search</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- main section end -->
+
+  <!-- js links -->
+  <script src="js/index.js"></script>
+
 </body>
 </html>

@@ -3,6 +3,10 @@
 @import "common";
 
 @import "header";
+@import "main";
+
+
+@import "responsive";
 
 *{
   margin: 0;
@@ -14,5 +18,5 @@ body{
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: $black;
-  background-color: $black;
+  // background-color: $black;
 }

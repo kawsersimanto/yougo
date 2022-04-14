@@ -1,25 +1,110 @@
 @import "variables";
 @import "mixin";
-
-header{
-
-}
+@import "responsive";
 
 .navbar {
+  width: 100%;
+  padding: 2.5rem 10%;
   @include flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+  z-index: 100000;
+}
+
+.navbar.sticky{
+  padding: 1rem 10%;
+  background-color: $black;
+}
+
+.toggle-button{
+  width: 40px;
+  height: 35px;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
+  top: 45px;
+  right: 5%;
+}
+
+.bar{
+  width: 100%;
+  height: 4px;
+  border-radius: 5px;
+  background-color: $primary-color;
 }
 
 .brand-title {
+  min-width: 10%;
+  img {
+    width: 100%;
+  }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .nav-links {
+  display: flex;
+  ul {
+    @include flex(center);
+  }
+  a {
+    margin: 0 2.5rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+  li:last-child {
+    margin-left: 2.5rem;
+    display: flex;
+    position: relative;
+    input {
+      padding-top: .3rem;
+      padding-bottom: 0.4rem;
+      color: $white;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid $white;
+
+      &::placeholder {
+        font-family: "Montserrat", sans-serif;
+        color: #c4c4c4;
+        text-transform: uppercase;
+      }
+
+      &:focus {
+        color: $white;
+        outline: none;
+      }
+    }
+  }
 }
 
 .search-button {
+  padding-top: .3rem;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  &:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  img {
+    width: 70%;
+  }
 }
 
-.book-button {
+.book-button{
+  display: inline-block;
 }
 
-.btn {
-}
+// responsiveness 
+@include hide-button;
+@include hidelinks;

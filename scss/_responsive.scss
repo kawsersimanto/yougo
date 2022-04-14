@@ -1,0 +1,58 @@
+@mixin hide-button {
+  @media only screen and(max-width:1340px){
+    .button-container{
+      display: none;
+    }
+  }
+}
+
+@mixin hidelinks {
+  @media only screen and(max-width:1024px){
+    .navbar{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-links{
+      display: none;
+      width: 100%;
+      ul{
+        width: 100%;
+        flex-direction: column;
+      }
+      li{
+        margin-top: .5rem;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        @include transition;
+        &:hover{
+          background-color: $primary-color;
+        }
+        &:last-child{
+          display: none;
+        }
+      }
+    }
+
+    .nav-links.display{
+      display: flex;
+    }
+    .toggle-button.display {
+
+      .bar:nth-child(2) {
+        opacity: 0;
+      }
+      .bar:nth-child(1) {
+        transform: translateY(15px) rotate(45deg);
+      }
+      .bar:nth-child(3) {
+        transform: translateY(-15px) rotate(-45deg);
+      }
+    }
+
+    .toggle-button{
+      display: flex;
+    }
+  }
+}

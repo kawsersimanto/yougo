@@ -1,2 +1,13 @@
 fonts -
   font-family: 'Montserrat', sans-serif;
+colors -
+  black - #262626
+  primary-color - #f2c57c
+
+headings -
+  banner-title: semi bold 90px
+  sub-title: semibold 60px
+  tag: regular 40px
+
+button - 
+  fontsize-20px
