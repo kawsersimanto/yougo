@@ -1,0 +1,62 @@
+.container {
+  margin: 0 auto;
+  width: 80%;
+  @include border;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: $white;
+}
+
+.banner-title{
+  font-size: 5.6rem;
+  font-weight: 600;
+  color: $white;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.title, .highlight{
+  padding-bottom: 1.25rem;
+  display: inline-block;
+  font-size: 3.75rem;
+  font-weight: 600;
+  color: $black;
+  text-transform: uppercase;
+  border-bottom: 2px solid $primary-color;
+}
+
+.highlight{
+  color: $primary-color;
+}
+
+.tag{
+  display: inline-block;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}
+
+.destiny-title{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: $white;
+}
+
+.btn{
+  padding: .8rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: $primary-color;
+  border: none;
+  border-radius: 40px;
+  color: $black;
+  &:focus{
+    outline: none;
+  }
+}
