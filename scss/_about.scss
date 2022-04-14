@@ -1,0 +1,49 @@
+@import "variables";
+@import "mixin";
+@import "responsive";
+
+.about {
+  padding: 10rem 0;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-content {
+  flex: 1 1 35rem;
+}
+
+.title {
+}
+
+.highlight {
+}
+
+.tag {
+  margin: 2rem 0 1.5rem 0;
+}
+
+.info {
+  margin-bottom: 2.5rem;
+  padding-right: 30%;
+  line-height: 1.5;
+}
+
+.about-btn {
+  margin-bottom: 2.5rem;
+}
+
+.about-img {
+  min-width: 30%;
+  flex: 0.8 1 10rem;
+  img{
+    width: 100%;
+    border-radius: 40px;
+  }
+}
+
+@include laptop-lg;

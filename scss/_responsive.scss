@@ -56,3 +56,48 @@
     }
   }
 }
+
+// about 
+
+@mixin laptop-lg {
+  @media only screen and (max-width:1024px){
+    body{
+      text-align: center;
+    }
+  
+    .about-container{
+      justify-content: center;
+    }
+  
+    .info {
+      padding: 0;
+    }
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width:768px){
+
+    .container{
+      width: 95%;
+    }
+  
+    .banner-content{
+      @include flex(center);
+      flex-direction: column;
+    }
+  
+    .banner-content input{
+      width: 80%;
+      display: block;
+    }
+  
+    .banner-button{
+      margin-top: 1rem;
+      width: 80%;
+      right: 0;
+      position: relative;
+    }
+  
+  }
+}

@@ -12,6 +12,7 @@ links.forEach(link=> link.addEventListener("click", ()=>{
 
 function stickNavbar(){
   navbar.classList.toggle("sticky", window.scrollY > 0);
+  toggleBtn.classList.toggle("sticky", window.scrollY > 0);
 }
 
 function showNavLinks(){

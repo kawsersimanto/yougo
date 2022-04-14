@@ -15,7 +15,13 @@
 
 .navbar.sticky{
   padding: 1rem 10%;
-  background-color: $black;
+  background-color: rgba(38, 38, 38, .8);
+  backdrop-filter: blur(20px);
+  box-shadow: 0px 10px 21px -6px rgba(0, 0, 0, .7);
+}
+
+.toggle-button.sticky{
+  top: 23px;
 }
 
 .toggle-button{
@@ -28,6 +34,7 @@
   position: absolute;
   top: 45px;
   right: 5%;
+  @include transition;
 }
 
 .bar{
