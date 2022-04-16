@@ -24,3 +24,15 @@ body{
   color: $black;
   // background-color: $black;
 }
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.reveal.show{
+  transform: translateY(0px);
+  opacity: 1;
+}
