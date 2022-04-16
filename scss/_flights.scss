@@ -1,0 +1,95 @@
+@import "variables";
+@import "mixin";
+
+.flights {
+  // margin-bottom: 5rem;
+  padding: 12rem 0;
+  background-image: url(../img/flight-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  box-shadow: $img-shadow-light;
+  border-top-right-radius: 12rem;
+}
+
+.top-card{
+  margin-bottom: 3rem;
+  @include flex(center);
+}
+
+.current-status {
+  min-width: 40%;
+  @include flex;
+  border-radius: 40px;
+  background-color: $white;
+  img{
+    margin-left: .5rem;
+    width: 20%;
+  }
+}
+
+.status{
+  width: 50%;
+  padding: 1.25rem 3.75rem;
+  @include flex(center);
+  flex: 1 1 auto;
+  border-radius: 40px;
+}
+
+.status-1.active{
+  background-color: $primary-color;
+}
+
+.status-2.active{
+  background-color: $primary-color;
+}
+
+.flight-title {
+  display: inline-block;
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: $black;
+  text-transform: capitalize;
+}
+
+.card-container {
+  @include flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.card {
+  min-width: 45%;
+  padding: 3rem;
+  @include flex;
+  flex-wrap: wrap;
+  flex: 1 1 30rem;
+  background: rgba(255, 255, 255, .7);
+  backdrop-filter: blur(5px);
+  box-shadow: $shadow;
+  border-radius: 40px;
+}
+
+.leaving-from, .going-to {
+  @include flex();
+  flex-direction: column;
+  h3{
+    padding: .5rem 2rem;
+    font-size: clamp(.8rem, 2vw, 1rem);
+    text-transform: capitalize;
+    background-color: $primary-color;
+    border-radius: 40px;
+  }
+  h2{
+    margin-top: 2rem;
+    font-size: clamp(.9rem, 3vw, 1.5rem);
+    text-transform: capitalize;
+  }
+}
+
+.icon {
+  min-width: 5%;
+  img{
+    width: 100%;
+  }
+}

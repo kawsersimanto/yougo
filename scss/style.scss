@@ -5,6 +5,7 @@
 @import "header";
 @import "main";
 @import "about";
+@import "flights";
 
 
 @import "responsive";
@@ -20,4 +21,28 @@ body{
   font-weight: 400;
   color: $black;
   // background-color: $black;
+}
+
+@media only screen and (max-width:450px){
+
+  .current-status{
+    img{
+      margin-top: .5rem;
+      // min-width: 50%;
+    }
+  }
+
+  .status{
+    padding: 20px 40px;
+  }
+
+  .card {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .icon {
+    margin: 1rem 0;
+  }
 }
