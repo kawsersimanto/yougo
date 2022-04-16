@@ -11,3 +11,25 @@
 @mixin transition {
   transition: all 0.3s ease 0s;
 }
+
+@mixin img-position {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+@mixin flex-end {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+@mixin padding {
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+@mixin border-radius {
+  border-radius: 40px;
+}

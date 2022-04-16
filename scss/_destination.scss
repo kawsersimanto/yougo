@@ -1,0 +1,82 @@
+@import "variables";
+@import "mixin";
+@import "responsive";
+
+.destination{
+  padding: 10rem 0;
+  text-align: right;
+}
+
+.destiny-tag{
+  margin-bottom: 5rem;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-auto-rows: 590px;
+  gap: 4rem;
+}
+
+.brazil{
+  background-image: url(../img/brazil.jpg);
+  @include img-position;
+  @include flex-end;
+  @include border-radius;
+  h2{
+    @include padding;
+  }
+}
+
+.thailand{
+  background-image: url(../img/thailand.jpg);
+  @include img-position;
+  @include flex-end;
+  @include border-radius;
+  h2{
+    @include padding;
+  }
+}
+
+.tokyo{
+  background-image: url(../img/tokyo.jpg);
+  @include img-position;
+  @include flex-end;
+  @include border-radius;
+  h2{
+    @include padding;
+  }
+}
+
+.bali{
+  background-image: url(../img/bali.jpg);
+  @include img-position;
+  @include flex-end;
+  @include border-radius;
+  h2{
+    @include padding;
+  }
+}
+
+.new-york{
+  background-image: url(../img/new-york.jpg);
+  @include img-position;
+  @include flex-end;
+  @include border-radius;
+  h2{
+    @include padding;
+  }
+}
+
+.cox-bazar{
+  background-image: url(../img/coxs-bazar.jpg);
+  @include img-position;
+  @include flex-end;
+  @include border-radius;
+  h2{
+    @include padding;
+  }
+}
+
+@include mobile-md;
+@include tablet;

@@ -98,6 +98,40 @@
       right: 0;
       position: relative;
     }
+
+    .destination{
+      text-align: center;
+    }
   
+  }
+}
+
+@mixin mobile-md {
+  @media only screen and (max-width:450px){
+
+    .grid-container{
+      grid-template-columns: 1fr;
+    }
+  
+    .current-status{
+      img{
+        margin-top: .5rem;
+        // min-width: 50%;
+      }
+    }
+  
+    .status{
+      padding: 1.25rem 2.5rem;
+    }
+  
+    .card {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .icon {
+      margin: 1rem 0;
+    }
   }
 }
